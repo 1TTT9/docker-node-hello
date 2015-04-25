@@ -6,7 +6,7 @@ Tree files used to build a Docker container and bundle a 'Hello Node' node app t
 ## ■ Appended
 - Dockerfile:  
 a shell-like flie used for Docker to set up an image and app-dependent packages and libraries  
-HOW-TO-USE: `docker build -t [REPOSITORY/TAG] .`
+HOW-TO-USE: `docker build -t [USERNAME/REPOSITORY:TAG] .`
 
 - package.json:  
 a json-format file used for npm to download dependencies.  
@@ -18,7 +18,7 @@ HOW-TO-USE: `node app.js`
 
 
 ## ■ Run
-- HOW-TO-RUN: `docker run -p 49160:7788 -d [USERNAME/REPOSITORY]`
+- HOW-TO-RUN: `docker run -p 49160:7788 -d [USERNAME/REPOSITORY:TAG]`
 ### NOTED  
 port `7788` was used inisde the container, and port `49160` was assgined by local host.  
 Hence, we should provide port `49160` to the others after port binding.
