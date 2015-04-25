@@ -1,0 +1,10 @@
+{
+  "name": "docker-node-hello",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Node.js Hello world app on Debain using docker",
+  "author": "gcc <gcc[at]gmail>",
+  "dependencies": {
+    "express": "3.2.4"
+  }
+}
