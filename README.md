@@ -19,13 +19,13 @@ HOW-TO-USE: `node app.js`
 
 ## ■ Run
 - HOW-TO-RUN: `docker run -p 49160:7788 -d [USERNAME/REPOSITORY:TAG]`
-### NOTED  
-port `7788` was used inisde the container, and port `49160` was assgined by local host.  
+
+### Noted
+- PORTS: port `7788` was used inisde the container, and port `49160` was assgined by local host.  
 Hence, we should provide port `49160` to the others after port binding.
-
 - HOW-TO-LIST: `docker ps`
-
 - HOW-TO-TEST: `curl $(boot2docker ip):49160`
+- I/O TIMEOUT: please make sure `boot2docker` is running in background. Otherwise, do `boot2docker restart`
 
 ## ■ Comment
 - Docker docuement:  
